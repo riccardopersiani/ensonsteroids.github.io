@@ -2,7 +2,7 @@
 .DS_Store
 .nyc_output
 .vscode
-node_modules
+#node_modules
 *.map
 /src/compiler/compile/internal_exports.ts
 /compiler.d.ts
