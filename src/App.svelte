@@ -3,6 +3,7 @@
   import { Web3 } from "svelte-web3";
   import Navbar from "./lib/Navbar.svelte";
   import Footer from "./lib/Footer.svelte";
+  export let url = ""; //This property is necessary declare to avoid ignore the Router
 
   // Connect to Moralis server
   const serverUrl = import.meta.env.VITE_MORALIS_SERVER_URI;
@@ -34,7 +35,7 @@
     : false;
 </script>
 
-<Router>
+<Router url="{url}">
   <div class="lg:p-10">
     {#if window.ethereum && !metamaskConnected}
       <p>Please connect to Metamask</p>
