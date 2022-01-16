@@ -5,7 +5,11 @@
 	"scripts": {
 		"dev": "vite --port 5000",
 		"build": "vite build",
-		"serve": "vite preview"
+		"serve": "vite preview",
+		"deploy": "node ./gh-pages.js",
+		"preview": "svelte-kit preview",
+		"lint": "prettier --ignore-path .gitignore  --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.11",
@@ -27,8 +31,10 @@
 		"cors-anywhere": "^0.4.4",
 		"date-fns": "^2.28.0",
 		"ethers": "^5.5.3",
+		"gh-pages": "^3.2.3",
 		"graphql-request": "^3.7.0",
 		"moralis": "^0.0.111",
-		"node-sass": "^7.0.1"
+		"node-sass": "^7.0.1",
+		"svelte-sitemap": "^2.3.0"
 	}
 }
