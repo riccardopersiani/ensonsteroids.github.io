@@ -4,6 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --port 5000",
+		"start": "sirv public",
 		"build": "vite build",
 		"serve": "vite preview",
 		"deploy": "node ./gh-pages.js",
@@ -36,6 +37,8 @@
 		"graphql-request": "^3.7.0",
 		"moralis": "^0.0.111",
 		"node-sass": "^7.0.1",
+		"sirv": "^2.0.0",
+		"sirv-cli": "^2.0.1",
 		"svelte-sitemap": "^2.3.0"
 	}
 }

@@ -1,7 +1,7 @@
 <script>
   // @ts-nocheck
 
-  import { Route } from "svelte-routing";
+  import { Route, Link } from "svelte-routing";
   import Home from "../routes/Home.svelte";
   import Nfts from "../routes/Nfts.svelte";
   import Expired from "../routes/Expired.svelte";
@@ -46,10 +46,10 @@ class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box"
 
   <div class="hidden px-2 mx-2 navbar-center lg:flex">
     <div class="items-stretch hidden lg:flex">
-      <a href="/" class="btn btn-ghost btn-sm rounded-btn"> Countdown </a>
-      <a href="/expired" class="btn btn-ghost btn-sm rounded-btn"> Expired </a>
-      <a href="/nfts" class="btn btn-ghost btn-sm rounded-btn"> Your ENS </a>
-      <a href="/hall" class="btn btn-ghost btn-sm rounded-btn"> Hall Of Fame </a>
+      <Link class="btn btn-ghost btn-sm rounded-btn" to="/">Countdown</Link>
+      <Link class="btn btn-ghost btn-sm rounded-btn" to="expired">Expired</Link>
+      <Link  class="btn btn-ghost btn-sm rounded-btn" to="nfts">Your ENS </Link>
+      <Link class="btn btn-ghost btn-sm rounded-btn" to="hall">Hall Of Fame</Link>
     </div>
   </div>
 
@@ -78,9 +78,9 @@ class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box"
 
 <div>
   <Route path="/" component={Home} />
-  <Route path="/nfts" component={Nfts} />
-  <Route path="/expired" component={Expired} />
-  <Route path="/hall" component={HallOfFame} />
+  <Route path="nfts" component={Nfts} />
+  <Route path="expired" component={Expired} />
+  <Route path="hall" component={HallOfFame} />
 </div>
 
 <style lang="scss">
