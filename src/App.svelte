@@ -33,12 +33,15 @@
     ? window.ethereum.isConnected()
     : false;
 
-    export let url = '';
-
+  export let url = "";
 </script>
 
 <Router {url}>
   <div class="lg:p-10">
+    {#if window.ethereum && !metamaskConnected}
+      <p>Please connect to Metamask</p>
+      <button on:click={onClickConnectWallet}> Connect wallet</button>
+    {/if}
     <Navbar />
     <Footer />
   </div>

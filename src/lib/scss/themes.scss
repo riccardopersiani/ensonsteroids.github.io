@@ -5,8 +5,8 @@
 }
 
 :root {
-	@include light-theme;
-	@media (prefers-color-scheme: dark) {
-		@include dark-theme;
-	}
+  @include light-theme;
+  @media (prefers-color-scheme: dark) {
+    @include dark-theme;
+  }
 }
