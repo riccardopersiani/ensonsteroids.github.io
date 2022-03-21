@@ -24,9 +24,10 @@ jobs:
           VITE_MORALIS_APP_ID: ${{ secrets.VITE_MORALIS_APP_ID }}
           VITE_MORALIS_SERVER_URI: ${{ secrets.VITE_MORALIS_SERVER_URI }}
 
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          publish_dir: ./dist
-          publish_branch: gh-pages
-          commit_message: Update Vite2.x + Vue3.x + TypeScript Starter
+          branch: gh-pages
+          folder: dist
