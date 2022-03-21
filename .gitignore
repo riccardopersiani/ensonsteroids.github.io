@@ -23,6 +23,7 @@
 _actual*.*
 _output
 /types
+/dist
 
 /site/.svelte-kit/
 /site/build/
