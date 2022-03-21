@@ -32,9 +32,12 @@
   $: metamaskConnected = window.ethereum
     ? window.ethereum.isConnected()
     : false;
+
+    export let url = '';
+
 </script>
 
-<Router basepath="/riccardopersiani.github.io">
+<Router {url}>
   <div class="lg:p-10">
     <Navbar />
     <Footer />
