@@ -34,7 +34,7 @@
     : false;
 </script>
 
-<Router>
+<Router basepath="/riccardopersiani.github.io">
   <div class="lg:p-10">
     <Navbar />
     <Footer />
