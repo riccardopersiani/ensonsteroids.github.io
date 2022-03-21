@@ -8,7 +8,7 @@ on:
 jobs:
   release:
     # prevents this action from running on forks
-    if: github.repository == 'sveltejs/vite-plugin-svelte'
+    if: github.repository == 'riccardopersiani.github.io'
     name: Release
     runs-on: ${{ matrix.os }}
     strategy:
