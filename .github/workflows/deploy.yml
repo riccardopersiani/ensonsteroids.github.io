@@ -25,7 +25,7 @@ jobs:
           VITE_MORALIS_SERVER_URI: ${{ secrets.VITE_MORALIS_SERVER_URI }}
 
       - name: Add .nojekyll file
-        run: touch ./out/.nojekyll
+        run: touch ./dist/.nojekyll
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
