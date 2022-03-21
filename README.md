@@ -1,3 +1,5 @@
+## Manual Deploy
+
 Remove old dist file:
 
 `rm -rf /dist`
