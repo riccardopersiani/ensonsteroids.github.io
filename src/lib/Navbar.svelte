@@ -1,7 +1,7 @@
 <script>
   // @ts-nocheck
 
-  import { Route } from "svelte-routing";
+  import { Route, Link } from "svelte-routing";
   import Home from "../routes/Home.svelte";
   import Nfts from "../routes/Nfts.svelte";
   import Expired from "../routes/Expired.svelte";
@@ -49,7 +49,12 @@ class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box"
       <a href="/" class="btn btn-ghost btn-sm rounded-btn"> Countdown </a>
       <a href="/expired" class="btn btn-ghost btn-sm rounded-btn"> Expired </a>
       <a href="/nfts" class="btn btn-ghost btn-sm rounded-btn"> Your ENS </a>
-      <a href="/hall" class="btn btn-ghost btn-sm rounded-btn"> Hall Of Fame </a>
+      <a href="hall" class="btn btn-ghost btn-sm rounded-btn"> Hall Of Fame </a>
+      <Link to="/">Home</Link>
+      <Link to="expired">About</Link>
+      <Link to="/expired">About</Link>
+      <Link to="nfts">Blog</Link>
+      <Link to="/nfts">/Blog</Link>
     </div>
   </div>
 
