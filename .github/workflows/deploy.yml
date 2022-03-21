@@ -20,11 +20,15 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          VITE_MORALIS_APP_ID: ${{ secrets.VITE_MORALIS_APP_ID }}
+          VITE_MORALIS_SERVER_URI: ${{ secrets.VITE_MORALIS_SERVER_URI }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_dir: ./dist
+        env:
           VITE_MORALIS_APP_ID: ${{ secrets.VITE_MORALIS_APP_ID }}
           VITE_MORALIS_SERVER_URI: ${{ secrets.VITE_MORALIS_SERVER_URI }}
+        with:
+          publish_dir: ./dist
           commit_message: Update Vite2.x + Vue3.x + TypeScript Starter
