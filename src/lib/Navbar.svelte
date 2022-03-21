@@ -46,15 +46,10 @@ class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box"
 
   <div class="hidden px-2 mx-2 navbar-center lg:flex">
     <div class="items-stretch hidden lg:flex">
-      <a href="/" class="btn btn-ghost btn-sm rounded-btn"> Countdown </a>
-      <a href="/expired" class="btn btn-ghost btn-sm rounded-btn"> Expired </a>
-      <a href="/nfts" class="btn btn-ghost btn-sm rounded-btn"> Your ENS </a>
-      <a href="hall" class="btn btn-ghost btn-sm rounded-btn"> Hall Of Fame </a>
-      <Link to="/">Home</Link>
-      <Link to="expired">About</Link>
-      <Link to="/expired">About</Link>
-      <Link to="nfts">Blog</Link>
-      <Link to="/nfts">/Blog</Link>
+      <Link to="/" class="btn btn-ghost btn-sm rounded-btn"> Countdown </Link>
+      <Link to="/expired" class="btn btn-ghost btn-sm rounded-btn"> Expired </Link>
+      <Link to="/nfts" class="btn btn-ghost btn-sm rounded-btn"> Your ENS </Link>
+      <Link to="hall" class="btn btn-ghost btn-sm rounded-btn"> Hall Of Fame </Link>
     </div>
   </div>
 
